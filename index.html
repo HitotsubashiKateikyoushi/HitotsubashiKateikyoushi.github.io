@@ -1,0 +1,596 @@
+<!DOCTYPE<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>一橋家庭教師 | オンライン個別指導</title>
+<meta name="description" content="一橋家庭教師晴日百福の公式ページです。オンラインで全国どこからでも質の高い個別指導が受けられます。一橋大学の学生がお子様の学習を徹底サポート。">
+
+<style>
+*,*::before,*::after{
+  box-sizing:border-box;
+}
+
+html,body{
+  width:100%;
+  min-height:100%;
+  margin:0;
+  padding:0;
+  background:#28282B;
+  overflow-x:hidden;
+}
+
+body{
+  color:#FEBA99;
+  font-family:Arial,sans-serif;
+  font-size:18px;
+  line-height:1.25;
+  word-wrap:break-word;
+}
+
+img{
+  display:block;
+  max-width:100%;
+  height:auto;
+}
+
+a{
+  color:#4DA3FF;
+}
+
+a:visited{
+  color:#7F7DFF;
+}
+
+ {padding-left: 4px;
+  padding-right: 4px;}
+
+#fixed-header-container{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  z-index:999999;
+  background:#28282B;
+  pointer-events:none;
+}
+
+#fixed-header-container *{
+  pointer-events:auto;
+}
+
+#top-banner{
+  width:100%;
+  padding:0;
+  color:#FEBA99;
+  font-size:20px;
+  line-height:.9;
+  text-align:center;
+}
+
+#bottom-stripe{
+  width:100%;
+  height:1px;
+  background:#808080;
+}
+
+#main-scroll-content{
+  position:relative;
+  z-index:1;
+  width:100%;
+  margin-top:15px;
+  padding:0;
+}
+
+.text-cushion,
+.block{
+  width:100%;
+  max-width:100%;
+  margin:0;
+  padding-left:4px;
+  padding-right:4px;
+}
+
+.center{
+  text-align:center;
+}
+
+.full-bleed-img{
+  display:block;
+  width:100%;
+  max-width:100%;
+  height:auto;
+  margin:0;
+  padding:0;
+  border:0;
+}
+
+.maetaka-victory{
+  position:relative;
+  top:10px;
+}
+
+.center-img{
+  display:block;
+  max-width:100%;
+  height:auto;
+  margin-left:auto;
+  margin-right:auto;
+}
+
+.video-wrap{
+  width:100%;
+  max-width:100%;
+  margin:0;
+  padding:0;
+  aspect-ratio:16/9;
+}
+
+.video-wrap iframe{
+  display:block;
+  width:100%;
+  height:100%;
+  margin:0;
+  padding:0;
+  border:0;
+}
+
+.icon-grid{
+  display:grid;
+  grid-template-columns:1fr 65px 1fr;
+  align-items:center;
+  width:100%;
+  margin:0;
+  padding:0;
+  line-height:1;
+  font-size:18px;
+}
+
+.icon-left,
+.icon-right{
+  display:flex;
+  align-items:center;
+  height:35px;
+}
+
+.icon-left{
+  justify-content:flex-end;
+}
+
+.icon-right{
+  justify-content:flex-start;
+}
+
+.icon-center{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:65px;
+  height:35px;
+}
+
+.icon-grid .icon-left > a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:35px;
+  height:35px;
+  color:#93CCF7;
+  text-decoration:none;
+  transform:translateX(-20px);
+}
+
+.icon-grid .icon-right > .meet-link{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:42px;
+  height:35px;
+  color:inherit;
+  text-decoration:none;
+  transform:translateX(20px);
+}
+
+.phone-icon{
+  display:block;
+  width:28px;
+  height:28px;
+  max-width:none;
+  object-fit:contain;
+  fill:currentColor;
+}
+
+.icon-grid .meet-icon{
+  display:block;
+  width:25.2px;
+  height:25.2px;
+  max-width:none;
+  object-fit:contain;
+}
+
+.icon-center img{
+  width:35px;
+  height:35px;
+  border-radius:50%;
+  object-fit:cover;
+}
+
+.fuku-toggle{
+  position:absolute;
+  opacity:0;
+  pointer-events:none;
+}
+
+.fuku-label{
+  display:block;
+  cursor:pointer;
+}
+
+.fuku-label img{
+  width:35px;
+  height:35px;
+  border-radius:50%;
+  object-fit:cover;
+  transition:transform .2s ease;
+}
+
+#fixed-header-container .fuku-label img{
+  transform-origin:center top;
+}
+
+#main-scroll-content .fuku-label img{
+  transform-origin:center bottom;
+}
+
+#fixed-header-container .fuku-toggle:checked + .fuku-label img,
+#main-scroll-content .fuku-toggle:checked + .fuku-label img{
+  transform:scale(7);
+  position:relative;
+  z-index:1000000;
+}
+</style>
+</head>
+
+<body>
+
+<header id="fixed-header-container">
+  <div id="top-banner">
+
+    <div style="font-size:1px;color:#28282B;line-height:1">一橋家庭教師晴日百福の公式ページです。オンラインで全国どこからでも質の高い個別指導が受けられます。一橋大学の学生がお子様の学習を徹底サポート。</div>
+
+    Hitotsubashi Kateikyōshi<br>
+
+    <div class="icon-grid">
+
+      <div class="icon-left">
+        <a href="tel:090-4401-0287" title="Call" aria-label="Call">
+          <svg class="phone-icon" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M7.8 3.2c-.6-.5-1.5-.4-2 .2L4.2 5.4c-.5.6-.6 1.4-.2 2.1
+              2.4 4.9 6.5 9 11.4 11.4.7.4 1.5.3 2.1-.2l2-1.6
+              c.6-.5.7-1.4.2-2l-1.9-2.4c-.5-.6-1.3-.8-2-.4l-1.7.9
+              c-1.7-.9-3.1-2.3-4-4l.9-1.7c.4-.7.2-1.5-.4-2L7.8 3.2Z"/>
+          </svg>
+        </a>
+      </div>
+
+      <div class="icon-center">
+        <input type="checkbox" id="fuku-top-toggle" class="fuku-toggle">
+        <label for="fuku-top-toggle" class="fuku-label">
+          <img src="https://raw.githubusercontent.com/HitotsubashiKateikyoushi/Leader/refs/heads/main/Inspiration.png" alt="福">
+        </label>
+      </div>
+
+      <div class="icon-right">
+        <a class="meet-link" href="https://meet.google.com/mkb-bsng-gax" target="_blank" rel="noopener" title="Google Meet" aria-label="Google Meet">
+          <img class="meet-icon" src="https://raw.githubusercontent.com/HitotsubashiKateikyoushi/Meet/7d37c762ca6cd0df749b3d6de2b32c606ce4afdd/GoogleMeet.svg" alt="Google Meet">
+        </a>
+      </div>
+
+    </div>
+
+    <div id="bottom-stripe"></div>
+  </div>
+</header>
+
+<main id="main-scroll-content">
+
+<br>
+
+<img class="full-bleed-img maetaka-victory" src="https://live.staticflickr.com/65535/55401664332_619570c763_b.jpg" alt="Maetaka Victory">
+
+<div class="text-cushion">
+  
+<br>
+
+<div class="block center" >
+I successfully entered
+</div>
+<div class="block center" >
+Hitotsubashi University
+</div>
+<div class="block center" >
+(totally by myself, without a juku)
+</div>
+<div class="block center" >
+(and passed the Keiō entrance exam)</div>
+<div class="block center" >
+and I will humbly help your child 
+</div>
+<div class="block center" >
+enter a top-tier National University.
+</div>
+  
+<br>
+
+<div class="block center" >
+私は一橋大学に入学しまして
+</div>
+<div class="block center" >
+（自身も塾に通わずに入学して）
+</div>
+<div class="block center" >
+（慶應の入試にも合格しまして）
+</div>
+<div class="block center" >
+あなた様のお子さんが一流の国立大学に
+</div>
+<div class="block center" >
+入学できるようにお手伝いいたします。
+</div>
+
+<br>
+
+<img src="https://raw.githubusercontent.com/HitotsubashiKateikyoushi/AchieveBigGoals/refs/heads/main/AchieveBigGoals.png" alt="Achieve Big Goals">
+
+<br>
+
+<img src="https://raw.githubusercontent.com/HitotsubashiKateikyoushi/SuccessfulEntrance/refs/heads/main/SuccessfulEntrance.png" alt="Successful Entrance">
+
+<br>
+
+<div lang="en" class="block">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+I am currently a second-year student at Hitotsubashi University. If you wish, I can send my "Certificate of Attendence" (the official original, not just a copy) to your home or workplace.
+</div>
+
+<br>
+
+<div lang="en" class="block">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+私は現在、一橋大学の2年生です。ご希望があれば、私の「在学証明書」（コピーではなく公式な原本）をご自宅又は勤務先へ送れます。
+</div>
+
+<br>
+
+<img src="https://raw.githubusercontent.com/HitotsubashiKateikyoushi/Zaigaku/refs/heads/main/Shoumeisho2026.png" alt="Zaigaku Shoumeisho">
+
+<br>
+
+<img src="https://raw.githubusercontent.com/HitotsubashiKateikyoushi/Kenritsu/refs/heads/main/Kenritsu.png" alt="#1 Kenritsu">
+
+<br>
+
+<div class="video-wrap">
+  <iframe src="https://www.youtube.com/embed/TlLrptqC_Ec?rel=0&iv_load_policy=3" title="晴日百福 前高 応援団長" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<br>
+
+<div lang="en" class="block">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+By entering a top-tier National University, tuition fees are reduced by 3.5 million yen (compared to a private university), and total career income is potentially increased by 300 million yen (as Presidents and Managing Directors tend to choose and promote top National university grads, over mere Prefectural or Private university grads).
+</div>
+
+<br>
+
+<div lang="en" class="block">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+一流の国立大学に入学の御蔭で、授業料は比較して350万円引き下げられて（私立大学と比較して）、さらに生涯賃金が潜在的に3億円増加します（社長や業務執行役員は、公立又私立よりも、一流の国立大学出身者を選ぶと昇進させるから）。
+</div>
+
+<br>
+
+<img src="https://raw.githubusercontent.com/HitotsubashiKateikyoushi/Leader/refs/heads/main/Inspiration.png" alt="Inspiration" style="display:block; margin-left:auto; margin-right:auto; width:57%;">
+
+<br>
+
+<div class="video-wrap">
+  <iframe src="https://www.youtube.com/embed/yVIe3b21t7Y?rel=0&iv_load_policy=3" title="晴日百福 前高 実行委員長" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</div>
+
+<br>
+
+<img src="https://raw.githubusercontent.com/HitotsubashiKateikyoushi/Teamwork/refs/heads/main/Teamwork.png" alt="Teamwork">
+
+<br>
+
+<img src="https://raw.githubusercontent.com/HitotsubashiKateikyoushi/DreamBig/refs/heads/main/DreamBig.png" alt="Dream Big">
+
+<br>
+
+<div lang="en" class="block">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+My 50-minute Online Private Tutoring can be (and should be) observed by the parents. The content consists of a review of past units (20 minutes), preparation for the next units (20 minutes), and altruistic advice on effective learning methods and motivation enhancement (10 minutes).
+</div>
+
+<br>
+
+<div lang="en" class="block">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+私の50分オンライン個別指導は、保護者の方もご覧いただけます（むしろ推奨します）。内容は、過去の単元の基礎復習（20分）、次回の単元の予習（20分）、そして効果的な学習方法とモチベーション向上に関する利他的なアドバイス（10分）で構成されます。
+</div>
+
+<br>
+
+<img src="https://raw.githubusercontent.com/HitotsubashiKateikyoushi/Victory/refs/heads/main/Result.png" alt="Result" style="display:block; margin-left:auto; margin-right:auto;">
+
+<br>
+
+<div lang="en" class="block">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Improvement in scores across all five subjects is guaranteed. My lessons are conducted Online-Only (using Zoom・GoogleMeet・WhatsApp・LINE), and payment is only made if you are completely satisfied after the lesson. Therefore, there is absolutely no risk for students or their parents.
+</div>
+
+<br>
+
+<div lang="en" class="block">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+全5科目の成績向上が保証されます。私のレッスンは完全オンラインのみ（Zoom・GoogleMeet・WhatsApp ・ LINE を使用）で、お支払いは授業後、かつ完全に満足された場合のみとなります。したがって、生徒や保護者の方にとってリスクは一切ありません。
+</div>
+
+<br>
+
+<img src="https://raw.githubusercontent.com/HitotsubashiKateikyoushi/Youth/refs/heads/main/Youth.png" alt="Youth" style="display:block; margin-left:auto; margin-right:auto;">
+
+<br>
+
+<div lang="en" class="block">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+I'm a Japanese citizen who was born and raised entirely in Japan. My mother is Japanese, she graduated from Meiji University, and her cousin is the former 12-year National Legislator of Japan: Ishizeki Takashi. My father is a Caucasian Red-Hair Jewish Levite American who was born and raised in California, studied at Sophia University's Comparative Culture faculty, and is fluent in Japanese through living in Japan for almost 30 years.
+</div>
+
+<br>
+
+<div lang="en" class="block">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+私は完全に日本で生まれ育った日本人です。私の母親は日本人で、明治大学を卒業して、いとこは日本で12年間務めた国会議員の石関貴史さんです。私の父親はカリフォルニア生まれの白人（赤毛のユダヤ系レヴィ族）のアメリカ人で、上智大学の比較文化学部で学び、日本での生活が30年近くに及ぶため日本語を流暢に話します。
+</div>
+
+<br>
+
+<img src="https://raw.githubusercontent.com/HitotsubashiKateikyoushi/SeitokaiChou/refs/heads/main/SeitokaiChou.png" alt="SeitokaiChou">
+
+<br>
+
+<div lang="en" class="block">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+I was elected the Student Council President of both elementary and junior high, I successfully entered the #1 prefectural high school (Maetaka), and as ŌenDan Head Leader and Executive Committee Chairman in the all-student all-sport championship I led all the Maetaka students to victory for the school's first time in nine years. Also, I am honored and proud to be a member of the Hitotsubashi Engeki Family.
+</div>
+
+<br>
+
+<div lang="en" class="block">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+私は小学校と中学校の両方の生徒会長に選出され、第1位の県立高校（前高）に成功的に入学し、応援団長と実行委員長として学校全体の定期戦スポーツ大会で前高のみんなを9年ぶりの優勝に導いた。また、私は一橋の演劇ファミリーの2年目のメンバーであることを、つつましくも光栄に思い、誇りに感じています。
+</div>
+
+<br>
+
+<img
+src="https://raw.githubusercontent.com/HitotsubashiKateikyoushi/HitotsubashiEngekiFamily/refs/heads/main/HitotsubashiEngekiFamily.png"
+alt="Hitotsubashi Engeki Family"
+/>
+  
+<br>
+
+<div class="block">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+I was featured in the city newspaper, prefectural television news, and even a national TV news broadcast: "The presence of the Executive Committee Chairman Momofuku was crucial. Everyone was inspired by his passionate speeches and trusted him, following his lead." "So, instead of being forced to do things, everyone proactively improved the precision of their practice sessions."
+</div>
+
+<br>
+
+<div class="block">
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+私は地元の新聞やテレビニュース、さらには全国放送のテレビニュースでも取り上げられました: 「実行委員長百福さんの存在が大きかった。彼の気持ちのこもった話にみな熱くなり、信頼して付いていった。」「だから、やらされるのではない、みんなは自分から練習の精度を上げていった。」
+</div>
+
+<br>
+
+<div class="block center">
+<a href="https://mebuku.city/news/interview/post-37307/" target="_blank" rel="noopener" title="mebuku.city/news/interview/post-37307/" style="color:#5A99E3;">
+Momofuku Maetaka News
+</a>
+</div>
+
+<img class="full-bleed-img" src="https://raw.githubusercontent.com/HitotsubashiKateikyoushi/Maebashi/refs/heads/main/Victory.png" alt="Victory">
+
+<br>
+
+<div class="block center" style="color:#93CCF7">Hitotsubashi Kateikyōshi</div>
+<div class="block center" style="color:#93CCF7">Momofuku HaLevi Sensei</div>
+<div class="block center" style="color:#93CCF7">Online 50 minutes = 5,000 yen</div>
+<div class="block center" style="color:#93CCF7">Payment After Lesson, if Satisfied 🙂</div>
+
+<br>
+
+<div class="block center" style="color:#93CCF7">一橋 家庭教師</div>
+<div class="block center" style="color:#93CCF7">晴日（はれび）百福 先生</div>
+<div class="block center" style="color:#93CCF7">オンライン 50分 = 5,000円</div>
+<div class="block center" style="color:#93CCF7">お支払いは授業の後、満足なら 🙂</div>
+
+<br>
+
+<img class="full-bleed-img" src="https://raw.githubusercontent.com/HitotsubashiKateikyoushi/Siblings/refs/heads/main/Siblings.png" alt="Siblings">
+
+<br>
+
+<div class="block center" style="color:#93CCF7">Payments are safely <u>After Only</u></div>
+<div class="block center" style="color:#93CCF7">Payments are if <u>Satisfied Only</u></div>
+<div class="block center" style="color:#93CCF7">Lessons are safely <u>Online Only</u></div>
+<div class="block center" style="color:#93CCF7">Totally safe for Students &amp; Parents</div>
+<div class="block center" style="color:#93CCF7">Zoom・Meet・WhatsApp・LINE</div>
+
+<br>
+
+<div class="block center" style="color:#93CCF7">お支払いは安全に <u>授業後払いのみ</u></div>
+<div class="block center" style="color:#93CCF7">尚お支払いは <u>満足された場合のみ</u></div>
+<div class="block center" style="color:#93CCF7">レッスンは安全に <u>オンラインのみ</u></div>
+<div class="block center" style="color:#93CCF7">生徒と保護者にとって完全に安全</div>
+<div class="block center" style="color:#93CCF7">Zoom・Meet・WhatsApp・LINE</div>
+
+<br>
+
+<img class="full-bleed-img" src="https://raw.githubusercontent.com/HitotsubashiKateikyoushi/Family/refs/heads/main/Family.png" alt="Family">
+
+<br>
+
+<div 
+lang="en" 
+class="block"
+style="text-align: left;"
+>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Serious long-term preparing parents: wisely improve your child's future life now. Even a thousand mile journey begins with one step. 🎵 To check current available times, call today.
+</div>
+
+<br>
+
+<div 
+lang="en"
+class="block"
+style="text-align: left;"
+>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+お子様の将来を真剣に考えている親御様へ：今こそ、お子様の未来を賢く築きましょう。千里の道も一歩から始まる。🎵 現在の空き状況については、今こそお電話どうぞ。
+</div>
+
+<div class="icon-grid">
+
+  <div class="icon-left">
+    <a href="tel:090-4401-0287" title="Call" aria-label="Call">
+      <svg class="phone-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M7.8 3.2c-.6-.5-1.5-.4-2 .2L4.2 5.4c-.5.6-.6 1.4-.2 2.1
+          2.4 4.9 6.5 9 11.4 11.4.7.4 1.5.3 2.1-.2l2-1.6
+          c.6-.5.7-1.4.2-2l-1.9-2.4c-.5-.6-1.3-.8-2-.4l-1.7.9
+          c-1.7-.9-3.1-2.3-4-4l.9-1.7c.4-.7.2-1.5-.4-2L7.8 3.2Z"/>
+      </svg>
+    </a>
+  </div>
+
+  <div class="icon-center">
+    <input type="checkbox" id="fuku-bottom-toggle" class="fuku-toggle">
+    <label for="fuku-bottom-toggle" class="fuku-label">
+      <img src="https://raw.githubusercontent.com/HitotsubashiKateikyoushi/Leader/refs/heads/main/Inspiration.png" alt="福">
+    </label>
+  </div>
+
+  <div class="icon-right">
+    <a class="meet-link" href="https://meet.google.com/mkb-bsng-gax" target="_blank" rel="noopener" title="Join Google Meet" aria-label="Join Google Meet">
+      <img class="meet-icon" src="https://raw.githubusercontent.com/HitotsubashiKateikyoushi/Meet/7d37c762ca6cd0df749b3d6de2b32c606ce4afdd/GoogleMeet.svg" alt="Google Meet">
+    </a>
+  </div>
+</div>
+</main>
+</body>
+</html>
